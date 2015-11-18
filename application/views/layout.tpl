@@ -7,11 +7,11 @@
 	</head>
 	<main>
 		<header>
-			{include file='layout/layout_entete.inc.tpl'}
-			{include file='nav/nav.inc.tpl'}
+			{include file='application/views/layout/layout_entete.inc.tpl'}
+			{include file='application/views/nav/nav.inc.tpl'}
 		</header>
 		<footer>
-			{include file='layout/layout_pied.inc.tpl'}
+			{include file='application/views/layout/layout_pied.inc.tpl'}
 		</footer>
 	</main>
 </html>
