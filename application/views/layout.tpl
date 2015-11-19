@@ -10,6 +10,10 @@
 			{include file='application/views/layout/layout_entete.inc.tpl'}
 			{include file='application/views/nav/nav.inc.tpl'}
 		</header>
+		<body>
+		{block name=page}
+		{/block}
+		</body>
 		<footer>
 			{include file='application/views/layout/layout_pied.inc.tpl'}
 		</footer>
