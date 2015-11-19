@@ -2,7 +2,7 @@
 	$erreur = '';
 	if (isset($_REQUEST['valid']))
 	{
-		include('configBDD.inc.php');
+		include('config.inc.php');
 		if ($_REQUEST['pass']!=$_REQUEST['conf'])
 			$erreur.='Les mots de passe ne sont pas identiques ! <br />';
 		try
