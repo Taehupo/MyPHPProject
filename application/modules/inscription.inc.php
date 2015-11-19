@@ -30,7 +30,7 @@
 			{ 
 				die('<div style="font-weight:bold; color:red>Erreur : ' . $e->getMessage() . '</div>');
 			}
-			header('Location: authent.php');
+			header('Location: ');
 		}
 	}
 ?>
