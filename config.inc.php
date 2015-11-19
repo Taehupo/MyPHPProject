@@ -1,24 +1,23 @@
 <?php
-$_PAGES=[''=>'accueil.inc','accueil'=>'accueil.inc','connexion'=>'connexion.inc','profil'=>'profil.inc','recette_detail'=>'recette_detail.inc','recette_liste'=>'recette_liste.inc'];
+$_PAGES=[''=>'accueil.inc','accueil'=>'accueil.inc','connexion'=>'connexion.inc','profil'=>'profil.inc','recette_detail'=>'recette_detail.inc','recette_liste'=>'recette_liste.inc', 'inscription'=>'inscription.inc.php'];
 define('HOME_PAGE',$_PAGES[''], true);
 define('ERROR_404',$_PAGES[''], true);
 
-if (mysql_connect("localhost", "u_recette" , "SJzEeqLb2HHeNYVV"))
-{
-	if (mysql_select_db('recette')) 
+define('DB_HOST', 'localhost');
+	define('DB_DATABASE','acces');
+	define('DB_USERNAME','u_acces');
+	define('DB_PASSWORD','SJzEeqLb2HHeNYVV');
+	try
 	{
-		//DEBUG echo "Connexion réussie";
-		/*Du code ici ? maybe...*/
+		$PDO_BDD = new PDO('mysql:host='.DB_HOST.';dbname='.DB_DATABASE, DB_USERNAME, DB_PASSWORD);
+		$PDO_BDD->setAttribute(PDO::ATTR_ERRMODE, PDO::ERRMODE_EXCEPTION);
+		$PDO_BDD->exec("SET NAMES 'utf8'");
 	}
-	else
+	catch(Exception $e)
 	{
-		die('Connexion échouée à la BDD : '. mysql_error());
+		echo 'Erreur : ' . $e->getMessage() . '<br />';
+		echo 'N° : ' . $e->getCode();
+		exit();
 	}
-}
-else
-{
-	die('Connexion au serveur de BDD échouée : '.mysql_error());
-}
-
 
 ?>
