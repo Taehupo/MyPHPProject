@@ -12,7 +12,7 @@
 			header('Location: https://thebest404pageever.com/');
 	}
 	else
-		$current_page = '';
+		$current_page = 'accueil';
 	include('./application/modules/'.$_PAGES[$current_page].'.php');
 	$smarty->assign('data',$data);
 	$smarty->display('application/views/modules/'.$current_page.'.tpl');
