@@ -3,7 +3,7 @@
 	<head>
 		<title>Site de recettes</title>
 		<meta charset="utf-8"/>
-		<link href="css/style.css" rel="stylesheet" type="text/css" />
+		<link href="asset/css/style.css" rel="stylesheet" type="text/css" />
 	</head>
 	<main>
 		<header>
