@@ -4,8 +4,8 @@ define('HOME_PAGE',$_PAGES[''], true);
 define('ERROR_404',$_PAGES[''], true);
 
 define('DB_HOST', 'localhost');
-	define('DB_DATABASE','acces');
-	define('DB_USERNAME','u_acces');
+	define('DB_DATABASE','recette');
+	define('DB_USERNAME','u_recette');
 	define('DB_PASSWORD','SJzEeqLb2HHeNYVV');
 	try
 	{
