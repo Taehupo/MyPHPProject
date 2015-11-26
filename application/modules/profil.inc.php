@@ -1,4 +1,5 @@
 <?php
 	$user=['nom'=>"petite", 'prenom'=>"crevette"];
-	$data['user']=$user;
+	$data['user[nom]']=$user['nom'];
+	$data['user[prenom]']=$user['prenom'];
 ?>
