@@ -1,8 +1,8 @@
 <?php
 	require_once('./application/libraries/smarty-3.1.27/libs/Smarty.class.php');
 	$smarty = new Smarty();
-	$smarty->caching = true;
-	$smarty->cache_lifetime = 120;
+	//$smarty->caching = true;
+	//$smarty->cache_lifetime = 120;
 	include('config.inc.php');
 	$data=array();
 	if(isset($_GET['page']))
@@ -13,7 +13,7 @@
 	}
 	else
 		$current_page = '';
-	$smarty->assign('data',$data);
 	include('./application/modules/'.$_PAGES[$current_page].'.php');
-	$smarty->display('application/views/layout.tpl');
+	$smarty->assign('data',$data);
+	$smarty->display('application/views/modules/'.$current_page.'.tpl');
 ?>
