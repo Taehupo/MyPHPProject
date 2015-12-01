@@ -147,3 +147,9 @@ ALTER TABLE T_RECETTE_RCT
 (1, 'Entree', 'Déliceuse entrée POUR BOUFFER VOTRE MERE EN SAUCE !', '/hamburger_m.jpg'),
 (2, 'Plat', 'Délicieux plats POUR ALLER FARCIR VOTRE GRAND-MÈRE AVEC !', '/hamburger_m1.jpg'),
 (3, 'Dessert', 'Délicieux desserts POUR FOURRER VOTRE PETITE COUSINE !', '/hamburger_m2.jpg');
+
+
+INSERT INTO t_utilisateur_uti (`UTI_ID`, `UTI_LOGIN`, `UTI_MAIL`, `UTI_NOM`,`UTI_PRENOM`, `UTI_PASS`, `UTI_ADMIN`, `UTI_AVATAR`) VALUES
+(1,'Taehupo', 'uzumakigip@gmail.com', 'Aubert','Gabriel', 'tamer', 1, 'vide'),
+(2,'Panda', 'Panda@gmail.com', 'Panda','Pandisson', 'tamer', 0, 'vide'),
+(3,'seb', 'seb@gmail.com', 'sebus','monsieurtus', 'tamer', 1, 'vide');
