@@ -142,3 +142,8 @@ ALTER TABLE T_INGREDIENT_IGD
 ALTER TABLE T_RECETTE_RCT
  ADD CONSTRAINT C_FK_UTI_RCT FOREIGN KEY (UTI_ID) REFERENCES T_UTILISATEUR_UTI (UTI_ID) ;
   
+
+  INSERT INTO `t_categorie_cat` (`CAT_ID`, `CAT_LABEL`, `CAT_DESCRIPTION`, `CAT_ILLUSTRATION`) VALUES
+(1, 'Entree', 'Déliceuse entrée POUR BOUFFER VOTRE MERE EN SAUCE !', '/hamburger_m.jpg'),
+(2, 'Plat', 'Délicieux plats POUR ALLER FARCIR VOTRE GRAND-MÈRE AVEC !', '/hamburger_m1.jpg'),
+(3, 'Dessert', 'Délicieux desserts POUR FOURRER VOTRE PETITE COUSINE !', '/hamburger_m2.jpg');
