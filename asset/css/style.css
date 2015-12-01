@@ -6,7 +6,7 @@ body{
 main{
 	background-color:gray;
 	margin:0 5em;
-	//padding:1em 2em;
+	#padding:1em 2em;
 }
 
 nav{
@@ -15,7 +15,8 @@ nav{
 	background-color:rgba(200,200,200,200);
 	text-align:center;
 	vertical-align:middle;
-	min-height:3em;
+	min-height:4em;
+	padding-top:2em;
 }
 
 section{
@@ -45,9 +46,17 @@ footer{
 }
 
 nav a{
+	display: inline;
 	padding-left:20px;
 	padding-right:20px;
 	vertical-align:middle;
+	padding:1em;
+	border:solid 1px;
+	border-radius:5px;
+	margin:1px;
+	background-color: white;
+	color:black;
+	
 }
 
 a{
@@ -55,10 +64,10 @@ a{
 }
 
 a:visited{
-	color:red;
+	color:black;
 }
 a:hover{
-	color:blue;
+	color:gray;
 }
 a:clicked{
 	color:red;
