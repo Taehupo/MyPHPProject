@@ -1,2 +1,2 @@
-<h1> ICI LE NOM DU SITE </h1>
-<p>Mon slogan</p>
+<h1> HÜBER Cooking </h1>
+<p>Les recettes qui feront rager vos taxis !</p>
