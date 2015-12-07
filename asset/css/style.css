@@ -27,6 +27,12 @@ section{
 	background-color:white;
 }
 
+article
+{
+	margin:1em;
+	padding:1em;
+}
+
 header{
 	border: solid 1px;
 	border-radius: 5px;
@@ -59,16 +65,16 @@ nav a{
 	
 }
 
-a{
+nav a{
 	color:white;
 }
 
-a:visited{
+nav a:visited{
 	color:black;
 }
-a:hover{
+nav a:hover{
 	color:gray;
 }
-a:clicked{
+nav a:clicked{
 	color:red;
 }
