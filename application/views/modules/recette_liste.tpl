@@ -19,6 +19,7 @@
 				<img src="media/{$recette['UTI_LOGIN']}/{$recette['RCT_ILLUSTRATION']}" alt="categorie {$recette['RCT_TITRE']}"></img>
 				<p>{$recette['RCT_DESCRIPTION']}</p>
 				<a href="index.php?page=recette_detail&idr={$recette['RCT_ID']}">Accéder aux détails</a>
+				<i><br/>Recette postée par {$recette['UTI_LOGIN']}</i>
 			</article>
 		{/foreach}
 	{/if}

@@ -64,7 +64,10 @@ nav a{
 	color:black;
 	
 }
-
+#det_img{
+	display:inline-block;
+	width:200px;
+}
 
 nav a:visited{
 	color:black;

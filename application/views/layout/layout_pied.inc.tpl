@@ -1,1 +1,1 @@
-<p>Pied de page</p>
+<i>&copy AUBERT gabriel & DAMIENS Sébastien | 2015-2016</i>
