@@ -145,15 +145,15 @@ ALTER TABLE T_RECETTE_RCT
   
 
   INSERT INTO `t_categorie_cat` (`CAT_ID`, `CAT_LABEL`, `CAT_DESCRIPTION`, `CAT_ILLUSTRATION`) VALUES
-(1, 'Entree', 'Déliceuse entrée POUR BOUFFER VOTRE MERE EN SAUCE !', '/hamburger_m.jpg'),
-(2, 'Plat', 'Délicieux plats POUR ALLER FARCIR VOTRE GRAND-MÈRE AVEC !', '/hamburger_m1.jpg'),
-(3, 'Dessert', 'Délicieux desserts POUR FOURRER VOTRE PETITE COUSINE !', '/hamburger_m2.jpg');
+(1, 'Entree', 'Retrouvez toutes les recettes pour bien commencer votre repas!', 'entree.jpg'),
+(2, 'Plat', 'Découvrez de succulent plat, base de votre repas, pour les plus gourmand et même pour les plus fine bouches', 'plat.jpg'),
+(3, 'Dessert', 'Préparez de délicieux desserts pour terminer votre repas sur les chapeaux de roue! La cerise sur le gâteau...', 'dessert.jpg');
 
 
 INSERT INTO t_utilisateur_uti (`UTI_ID`, `UTI_LOGIN`, `UTI_MAIL`, `UTI_NOM`,`UTI_PRENOM`, `UTI_PASS`, `UTI_ADMIN`, `UTI_AVATAR`) VALUES
-(1,'Taehupo', 'uzumakigip@gmail.com', 'Aubert','Gabriel', 'tamer', 1, 'vide'),
-(2,'Panda', 'Panda@gmail.com', 'Panda','Pandisson', 'tamer', 0, 'vide'),
-(3,'seb', 'seb@gmail.com', 'sebus','monsieurtus', 'tamer', 1, 'vide');
+(1,'Taehupo', 'uzumakigip@gmail.com', 'AUBERT','Gabriel', '9135cbe5c7a68486ceddd60c4fb2108fe845d67f', 1, 'vide'), # mdp: mdpass2
+(2,'Panda', 'Panda@gmail.com', 'Panda','Pandisson', 'b56456d866192a76dca0314eaf76c4d944fc4ba3', 0, 'vide'), # mdp: mdpass1
+(3,'Sebdami', 'sebdami123@gmail.com', 'DAMIENS','Sébastien', '706687f00cf2bfda9cc4c6c5fed43690da7fc146', 1, 'vide'); # mdp: mdpass
 
 INSERT INTO `t_recette_rct` (`RCT_ID`, `RCT_DATE`, `RCT_TITRE`, `RCT_DESCRIPTION`, `RCT_RECETTE`, `RCT_TEMPS_PREPARATION`, `RCT_TEMPS_CUISSON`, `RCT_TEMPS_REPOS`, `RCT_DIFFICULTE`, `RCT_COUT`, `RCT_STATUT`, `RCT_ILLUSTRATION`, `UTI_ID`, `RCT_NBPERSONNE`) VALUES
 (1, 0x323031352d31322d30312031303a32353a3532, 'Oeuf au plat', 'Comment cuisiner un bon oeuf au plat ?', 'Comment faire ce plat exquis et raffiné qu''est l''oeuf au plat? Je vais vous expliquer cet art dans cette recette. Tout d''abord, vous avez besoin d''un oeuf, et d''un plat.Mettez l''oeuf dans le plat, et faites chauffer 3 min.Rajoutez des epices tel que du persilMangez.Bravo, vous êtes un cuisinier confirmé!', 0x30303a30343a3030, 0x30303a30333a3030, 0x30303a30303a3030, 'facile', 'faible', 'finale', 'oeuf_au_plat.jpg', 3, 1),

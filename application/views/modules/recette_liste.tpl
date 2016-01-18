@@ -6,7 +6,7 @@
 		{foreach from=$data['tab_cat'] item=egorie}
 			<article>
 				<h3>{$egorie['CAT_LABEL']}</h3>
-				<img src="media/categorie{$egorie['CAT_ILLUSTRATION']}" alt="categorie {$egorie['CAT_LABEL']}"></img>
+				<img src="media/categorie/{$egorie['CAT_ILLUSTRATION']}" alt="categorie {$egorie['CAT_LABEL']}"></img>
 				<p>{$egorie['CAT_DESCRIPTION']}</p>
 				<a href="index.php?page=recette_liste&idc={$egorie['CAT_ID']}">Accéder aux recettes</a>
 			</article>
