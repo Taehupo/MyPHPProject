@@ -1,0 +1,1 @@
+<a href="index.php?page=connexion&logout=1">Log out</a>

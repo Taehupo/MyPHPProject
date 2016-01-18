@@ -1,5 +1,16 @@
 <?php
+	function debug_to_console( $data ) {
+
+    if ( is_array( $data ) )
+        $output = "<script>console.log( 'Debug Objects: " . implode( ',', $data) . "' );</script>";
+    else
+        $output = "<script>console.log( 'Debug Objects: " . $data . "' );</script>";
+
+    echo $output;
+	}
 	$erreur='';
+	if(!isset($_GET['logout']))
+	{
 	if (isset($_REQUEST['submit']))
 	{
 		try
@@ -15,14 +26,20 @@
 			$erreur.='Login ou mot de passe incorrect ! <br />'.hash('sha1',$_REQUEST['pass']);
 		else 
 		{		
-			session_start();
-			$_SESSION['pseudo'] = $_REQUEST['login'];
+			$_SESSION['login'] = $_REQUEST['login'];
 			if (!isset($_SESSION['count']))
 				$_SESSION['count'] = 0;
 			else
 				$_SESSION['count']++;
 			header('location: index.php?page=accueil');
 		}
+	}
+	}
+	else
+	{
+		$_SESSION = array();
+		session_destroy();
+		header('location: index.php?page=accueil');
 	}
 	$data['erreur_connexion'] = $erreur;
 ?>

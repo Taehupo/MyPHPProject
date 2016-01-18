@@ -1,6 +1,7 @@
 <?php
 	require_once('./application/libraries/smarty-3.1.27/libs/Smarty.class.php');
 	$smarty = new Smarty();
+	session_start();
 	//$smarty->caching = true;
 	//$smarty->cache_lifetime = 120;
 	include('config.inc.php');
