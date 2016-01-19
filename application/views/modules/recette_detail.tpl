@@ -35,13 +35,28 @@
 					<article class = "commentaire">
 						<h4>{$com['UTI_LOGIN']} - {$com['COM_DATE']} a dit:</h4>
 						<p>{$com['COM_TEXTE']}</p>
+						{if $com['UTI_LOGIN'] == $smarty.session.login}
+							<form action="index.php?page=recette_detail&idr={$smarty.request.idr}" method="post">
+								<input type="hidden" name="comid" value="{$com['COM_ID']}"/>
+								<input type="submit" name="supprime" value="Supprimer le commentaire"/>
+							</form>
+						{/if}
 					</article>
 				{/foreach}
 			{else}
 				<p>Pas encore de commentaire sur cette recette. Soyez le premier à laisser votre avis!</p>
 			{/if}
+			{if isset($data['can_com'])}
+			<article>
+				<h4>Poster un commentaire:</h4>
+				<form action="index.php?page=recette_detail&idr={$smarty.request.idr}" method="post">
+					<textarea name="message" class="com_message" required></textarea><br/>
+					<input type="submit" name="poste" value="Envoyer le commentaire"/>
+				</form>
+			</article>
+			{/if}
 		{else}
-			<p>Veuillez vous connecter pour pouvoir lire les commentaires</p>
+			<p>Veuillez vous connecter pour pouvoir lire ou poster des commentaires</p>
 		{/if}
 	</article>
 {else}

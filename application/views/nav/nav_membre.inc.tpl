@@ -1,1 +1,1 @@
-<a href="index.php?page=connexion&logout=1">Log out</a>
+<a href="index.php?page=connexion&logout=1">{$smarty.session.login} (Log out)</a>

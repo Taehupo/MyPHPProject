@@ -1,13 +1,4 @@
 <?php
-	function debug_to_console( $data ) {
-
-    if ( is_array( $data ) )
-        $output = "<script>console.log( 'Debug Objects: " . implode( ',', $data) . "' );</script>";
-    else
-        $output = "<script>console.log( 'Debug Objects: " . $data . "' );</script>";
-
-    echo $output;
-	}
 	$erreur='';
 	if(!isset($_GET['logout']))
 	{
@@ -23,7 +14,7 @@
 			die('<div style="font-weight:bold; color:red>Erreur : ' . $e->getMessage() . '</div>');
 		}
 		if ($req->fetch(PDO::FETCH_OBJ)=='')
-			$erreur.='Login ou mot de passe incorrect ! <br />'.hash('sha1',$_REQUEST['pass']);
+			$erreur.='Login ou mot de passe incorrect ! <br />';
 		else 
 		{		
 			$_SESSION['login'] = $_REQUEST['login'];
