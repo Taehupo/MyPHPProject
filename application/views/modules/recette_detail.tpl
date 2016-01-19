@@ -14,7 +14,9 @@
 				<li>Difficulté: {$recette['RCT_DIFFICULTE']}</li>
 				<li>Nombre de personnes: {$recette['RCT_NBPERSONNE']}</li>
 			</ul>
-			<img src="media/{$recette['UTI_LOGIN']}/{$recette['RCT_ILLUSTRATION']}" alt="categorie {$recette['RCT_TITRE']}" id="det_img"></img>
+			<div class="img">
+				<img src="media/{$recette['UTI_LOGIN']}/{$recette['RCT_ILLUSTRATION']}" alt="categorie {$recette['RCT_TITRE']}" id="det_img"></img>
+			</div>
 			<p>{$recette['RCT_DESCRIPTION']}</p>
 		</article>
 		<article>
@@ -25,6 +27,23 @@
 		</article>
 		<i>Recette postée par {$recette['UTI_LOGIN']}, le {$recette['RCT_DATE']}</i>
 	{/foreach}
+	<article>
+		<h3>Commentaires:</h3>
+		{if isset($smarty.session.login)}
+			{if !empty($data['comments'])}
+				{foreach $data['comments'] as $com}
+					<article class = "commentaire">
+						<h4>{$com['UTI_LOGIN']} - {$com['COM_DATE']} a dit:</h4>
+						<p>{$com['COM_TEXTE']}</p>
+					</article>
+				{/foreach}
+			{else}
+				<p>Pas encore de commentaire sur cette recette. Soyez le premier à laisser votre avis!</p>
+			{/if}
+		{else}
+			<p>Veuillez vous connecter pour pouvoir lire les commentaires</p>
+		{/if}
+	</article>
 {else}
 	<p>La recette à laquelle vous tentez d'accéder n'existe pas</p>
 {/if}

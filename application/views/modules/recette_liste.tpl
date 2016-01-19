@@ -6,9 +6,11 @@
 		{foreach from=$data['tab_cat'] item=egorie}
 			<article>
 				<h3>{$egorie['CAT_LABEL']}</h3>
-				<img src="media/categorie/{$egorie['CAT_ILLUSTRATION']}" alt="categorie {$egorie['CAT_LABEL']}"></img>
-				<p>{$egorie['CAT_DESCRIPTION']}</p>
-				<a href="index.php?page=recette_liste&idc={$egorie['CAT_ID']}">Accéder aux recettes</a>
+				<div class="img">
+					<img src="media/categorie/{$egorie['CAT_ILLUSTRATION']}" alt="categorie {$egorie['CAT_LABEL']}" class="img_list"></img>
+				</div>
+				<p class="desc">{$egorie['CAT_DESCRIPTION']}</p><br/>
+				<a href="index.php?page=recette_liste&idc={$egorie['CAT_ID']}" class="acces">Accéder aux recettes &gt</a>
 			</article>
 		{/foreach}
 	{else}
@@ -16,9 +18,11 @@
 		{foreach from=$data['tab_rct'] item=recette}
 			<article>
 				<h3>{$recette['RCT_TITRE']}</h3>
-				<img src="media/{$recette['UTI_LOGIN']}/{$recette['RCT_ILLUSTRATION']}" alt="categorie {$recette['RCT_TITRE']}"></img>
-				<p>{$recette['RCT_DESCRIPTION']}</p>
-				<a href="index.php?page=recette_detail&idr={$recette['RCT_ID']}">Accéder aux détails</a>
+				<div class="img">
+					<img src="media/{$recette['UTI_LOGIN']}/{$recette['RCT_ILLUSTRATION']}" alt="recette {$recette['RCT_TITRE']}" class="img_list"></img>
+				</div>
+				<p class="desc">{$recette['RCT_DESCRIPTION']}</p><br/>
+				<a href="index.php?page=recette_detail&idr={$recette['RCT_ID']}" class="acces">Accéder aux détails &gt</a>
 				<i><br/>Recette postée par {$recette['UTI_LOGIN']}</i>
 			</article>
 		{/foreach}

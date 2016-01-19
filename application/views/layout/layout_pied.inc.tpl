@@ -1,1 +1,1 @@
-<i>&copy AUBERT gabriel & DAMIENS Sébastien | 2015-2016</i>
+<i>&copy AUBERT Gabriel & DAMIENS Sébastien | 2015-2016</i>
