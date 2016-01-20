@@ -152,7 +152,7 @@ ALTER TABLE T_RECETTE_RCT
 
 INSERT INTO t_utilisateur_uti (`UTI_ID`, `UTI_LOGIN`, `UTI_MAIL`, `UTI_NOM`,`UTI_PRENOM`, `UTI_PASS`, `UTI_ADMIN`, `UTI_AVATAR`) VALUES
 (1,'Taehupo', 'uzumakigip@gmail.com', 'AUBERT','Gabriel', '9135cbe5c7a68486ceddd60c4fb2108fe845d67f', 1, 'profil.png'), # mdp: mdpass2
-(2,'Panda', 'Panda@gmail.com', 'Panda','Pandisson', 'b56456d866192a76dca0314eaf76c4d944fc4ba3', 0, 'profil.jpg'), # mdp: mdpass1
+(2,'Panda', 'Panda@gmail.com', 'Pandisson','Panda', 'b56456d866192a76dca0314eaf76c4d944fc4ba3', 0, 'profil.jpg'), # mdp: mdpass1
 (3,'Sebdami', 'sebdami123@gmail.com', 'DAMIENS','Sébastien', '706687f00cf2bfda9cc4c6c5fed43690da7fc146', 1, 'profil.png'); # mdp: mdpass
 
 INSERT INTO `t_recette_rct` (`RCT_ID`, `RCT_DATE`, `RCT_TITRE`, `RCT_DESCRIPTION`, `RCT_RECETTE`, `RCT_TEMPS_PREPARATION`, `RCT_TEMPS_CUISSON`, `RCT_TEMPS_REPOS`, `RCT_DIFFICULTE`, `RCT_COUT`, `RCT_STATUT`, `RCT_ILLUSTRATION`, `UTI_ID`, `RCT_NBPERSONNE`) VALUES
