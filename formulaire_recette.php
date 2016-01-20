@@ -9,8 +9,8 @@
 	<input type ="text" name="temps repos"></br>
 	Difficultee </br>
 	<input type="radio" name="difficultee" value ="Facile" checked> Facile </br>
-	<input type="radio" name="difficultee" value ="Moyenne" checked> Moyenne </br>
-	<input type="radio" name="difficultee" value ="Difficile" checked> Difficile </br>
+	<input type="radio" name="difficultee" value ="Moyenne"> Moyenne </br>
+	<input type="radio" name="difficultee" value ="Difficile"> Difficile </br>
 	Nombre de personne </br>
 	<input type="number" min="1" max="50" name="nb_pers"></br>
 	Description rapide</br>
@@ -34,7 +34,8 @@
 	<input type="text" name="nom"></br>
 	Prenom</br>
 	<input type="text" name="prenom"></br>
-	Comment on UP un avatar ? XD </br>
+	Avatar</br>
+	<input type="file" name="Vava"></br>
 	<input type="submit" value="Envoyer">
 	<input type="reset" value="Reinitialiser">
 </form>
