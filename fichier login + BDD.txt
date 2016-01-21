@@ -1,0 +1,5 @@
+Fichier paramètre connexion BDD : config.inc.php
+Login et mot de passe utilisiteurs :
+'Taehupo' # mdp: mdpass2
+'Panda'# mdp: mdpass1
+'Sebdami' # mdp: mdpass
