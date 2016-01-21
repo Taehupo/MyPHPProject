@@ -3,6 +3,10 @@
 <section>
 	<h2>Bienvenue!</h2>
 	<article>
+		<h3>Bienvenue sur le site Cooking Berry!</h3>
+		<p>Cooking Berry est un site de partage de recettes. <br/>En te connectant, tu peux poster tes propes recettes, et commenter celles des autres membres!<br/> En attendant, tu peux commencer la navigation en allant voir dans l'onglet "Les Recettes". Ou bien tu peux cliquer sur l'une des trois recettes en dessous.</p>
+	</article>
+	<article>
 		<h3>Quelques recettes au hasard</h3>
 		{foreach $data['rdm_rct'] as $recette}
 			<article>
@@ -15,23 +19,6 @@
 				<i><br/>Recette postée par {$recette['UTI_LOGIN']}</i>
 			</article>
 		{/foreach}
-	</article>
-</section>
-<section>
-	<article>
-		<h3>Le Tableau réellement random</h3>
-		<table border=1>
-		<tr>
-			<th>Valeur 1</th>
-			<th>Valeur 2</th>
-			<th>Valeur 3</th>
-		</tr>
-		<tr>
-		{foreach $data['alea'] as $el}
-			<td>{$el}</td>
-		{/foreach}
-		</tr>
-		</table>
 	</article>
 </section>
 {/block}

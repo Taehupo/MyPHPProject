@@ -22,7 +22,7 @@
 				$_SESSION['count'] = 0;
 			else
 				$_SESSION['count']++;
-			header('location: index.php?page=accueil');
+			header('location: index.php?page=profil');
 		}
 	}
 	}

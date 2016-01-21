@@ -172,5 +172,5 @@ INSERT INTO `tj_cat_rct` (`CAT_ID`, `RCT_ID`) VALUES
 (3, 5);
 
 INSERT INTO `t_commentaire_com` (`COM_ID`, `COM_TEXTE`, `COM_DATE`, `UTI_ID`, `RCT_ID`) VALUES
-(1, 'Très bonne recette, à faire!', 0x323031362d30312d31392031373a31383a3139, 3, 1),
+(1, 'Très bonne recette, à faire!', 0x323031362d30312d31392031373a31383a3139, 3, 4),
 (2, 'Je l''ai testée, un régal! Je recommande de bien prendre un oeuf de poule cependant, avec un oeuf de caille on reste un peu sur sa faim.', 0x323031362d30312d31392031373a33303a3233, 1, 1);
